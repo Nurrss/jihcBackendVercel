@@ -2,11 +2,11 @@
   "name": "jihc_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -25,7 +25,6 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.0.3",
     "uuid": "^9.0.1",
-    "validator": "^13.11.0",
-    "vercel": "^34.0.0"
+    "validator": "^13.11.0"
   }
 }
