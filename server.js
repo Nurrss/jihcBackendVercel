@@ -33,10 +33,6 @@ const options = {
   },
   apis: ["routes/*.js"], // Укажите путь к вашим файлам маршрутов
 };
-const corsConfig = {
-  origin: ["https://jihc.edu.kz", "http://localhost:8080"],
-  credentials: true,
-};
 
 mongoose
   .connect(
@@ -50,8 +46,7 @@ app.use(logger);
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
-app.use(cors(corsConfig));
-app.options("*", cors(corsConfig));
+app.use(cors());
 app.use(cookieParser());
 
 app.use("/api/register", registerRoute);
